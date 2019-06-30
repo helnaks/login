@@ -53,7 +53,8 @@ class UserModel
      * @param string $email
      * @return bool
      */
-    function validteEmail(string $email) {
+    function validteEmail(string $email)
+    {
         $sql = "SELECT id FROM user WHERE email = '" . $email . "'";
        
         $result = mysqli_query($this->dbConnection->connection, $sql);  
